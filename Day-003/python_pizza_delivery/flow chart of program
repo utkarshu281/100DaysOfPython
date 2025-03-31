@@ -1,0 +1,24 @@
+graph TD;
+  A(Start) -->|Input| B{Choose Pizza Size}
+  B -->|S| C[Total = $15]
+  B -->|M| D[Total = $20]
+  B -->|L| E[Total = $25]
+
+  C --> F{Add Pepperoni?}
+  D --> F
+  E --> F
+
+  F -->|Y & S| G[Total += $2]
+  F -->|Y & M/L| H[Total += $3]
+  F -->|N| I[No change]
+
+  G --> J{Add Extra Cheese?}
+  H --> J
+  I --> J
+
+  J -->|Y| K[Total += $1]
+  J -->|N| L[No change]
+
+  K --> M[Display Final Bill]
+  L --> M
+  M --> N(End)
