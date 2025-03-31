@@ -6,3 +6,6 @@ print("hello " + gg + " the number of char in your name is: ", len(gg))
 print("hello " + (gname := input("write your name\n")) + " the number of char in your name is: " + str(len(gname)))
 # angela mam
 print(len(input("whats your name handsome:")))
+#using f string
+name = input("write your name handsome")
+print(f"hello!,{name}")
