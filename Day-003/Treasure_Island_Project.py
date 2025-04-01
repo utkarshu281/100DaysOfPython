@@ -22,7 +22,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-direction = input("You're at a cross road. Where do you want to go?\nType left or right:")
+direction = input('You\'re at a cross road. Where do you want to go?\nType "left" or "right":')#u can use single quote if u want double quote on line and \ is an escape seq it escapes the next thing behind it
 if direction == "left":
     decide = input("swim or wait for the boat:")
     if decide == "wait":
